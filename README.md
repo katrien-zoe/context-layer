@@ -1,2 +1,2 @@
 # claude-marketing-os
-Personal portfolio built with Claude.
+Katrien's personal portfolio built with Claude.
