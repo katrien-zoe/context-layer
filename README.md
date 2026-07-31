@@ -15,6 +15,8 @@ A marketing OS has four layers:
 - **Measurement**: what you track, and what it's telling you.
 - **Operations**: playbooks, process, how the team actually works.
 
+![The four layers of a marketing OS, with context first. This repo is the context layer.](layers.png)
+
 
 Context comes first, because every other layer reads from it. Get the positioning wrong and every campaign inherits the mistake.
 
