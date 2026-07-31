@@ -1,5 +1,6 @@
 ![marketing-os: stop re-explaining your company. The context layer of a marketing operating system.](cover.png)
 
+
 # marketing-os
 
 A marketing operating system covers a lot of ground: positioning, campaigns, content, budgets, numbers, playbooks, the way a team works.
@@ -15,10 +16,11 @@ A marketing OS has four layers:
 - **Measurement**: what you track, and what it's telling you.
 - **Operations**: playbooks, process, how the team actually works.
 
+
 ![The four layers of a marketing OS, with context first. This repo is the context layer.](layers.png)
 
 
-Context comes first, because every other layer reads from it. Get the positioning wrong and every campaign inherits the mistake.
+Context comes first, because every other layer reads from it. Get the positioning wrong and every campaign after it is wrong too.
 
 This repo holds that layer, and only that layer, because it's the part that's useful to someone else empty. A blank ICP framework still helps you think. A blank playbook is a table with headers.
 
@@ -28,13 +30,13 @@ It is not software. Nothing to install. Six markdown files and the discipline to
 
 ## The problem this solves
 
-**Marketing context is scattered by default.** Forty files across five tools, half of them out of date, and one person who knows where everything is. Everyone works from a slightly different version, so every asset drifts a little further from the last.
+**Marketing context is scattered by default.** Forty files across five tools, half of them out of date, and one person who knows where everything is. Everyone works from a slightly different version, so everything you produce moves a little further away from the last thing.
 
-**AI multiplies whatever it's given.** Agents don't fix a thin or out-of-date foundation. They produce more from it, faster.
+**AI copies whatever you give it.** If what you give it is thin or out of date, you get more of that, faster. It doesn't improve on the way in.
 
-**Undocumented context caps your speed.** Start building an engine and you add hands: a first hire, a freelancer, an agency, a few agents. Every one of them needs the same context, and if it isn't written down, you are the only place to get it. Sales, product and support too, all describing the same company to the same buyers, usually from different versions of it.
+**If it isn't written down, you become the bottleneck.** Start building a real marketing function and you add people: a first hire, a freelancer, an agency, a few agents. Every one of them needs the same background, and you are the only place to get it. Sales, product and support too, all describing the same company to the same buyers, usually from different versions of it.
 
-Written context is what lets you add hands without losing the plot.
+Writing it down is what lets you add people without everything falling apart.
 
 ## Who it's for
 
@@ -53,7 +55,7 @@ Context layer: live. More will follow, selectively.
 ## What's in here
 
 ```
-CLAUDE.md              → the spine. Top-line context, always loaded first.
+CLAUDE.md              → the short version of everything below. Read this first.
 context/
   business-context.md  → who we are, what we do, who we sell to, the rules
   competitors.md       → the landscape, per-competitor profiles, white space
@@ -63,43 +65,53 @@ context/
 example/               → all of the above filled in, plus what came out of it
 ```
 
-Six files. That's the foundation. Everything else reads from it.
+Six files. Everything else is built on top of them.
 
-## See it filled in
+## See what it looks like filled in
 
-**Start here:** [`example/output/campaign-brief.md`](example/output/campaign-brief.md). Same one-sentence prompt, run twice. Once without the context, once with. The difference is the whole argument.
+The `example` folder has all six files filled in for a made-up company. A small Belgian business that sells booking software to padel clubs.
 
-`example/` has the whole thing done for a fictional company: six files filled, plus three artifacts produced from them. A positioning statement, a LinkedIn post in the founder's voice, and a Q3 campaign brief.
+It also has three things that were written using those files: a campaign plan, a LinkedIn post, and a positioning statement.
 
-Each artifact ends with a table showing where every element came from. The campaign brief rules out paid social and a Spanish launch, targets a named list of 600 club owners, builds around an insight about empty Tuesday afternoons, and flags that the founder is the bottleneck. None of that was in the prompt. The prompt was one sentence.
+Each of those three is shown twice. Once written by an AI that knew nothing about the company. Once written by an AI that had read the six files first. Underneath each pair, a table shows which file caused which difference.
 
-That's the whole argument, in one folder.
+**Open [`example/output/campaign-brief.md`](example/output/campaign-brief.md) first.** Both versions came from the same one-line request: "draft a Q3 campaign plan".
+
+The first one could be about any company. The second one knows which channels this company already tried and dropped, who it deliberately doesn't sell to, and how much its founder can realistically take on. Nobody put any of that in the request. It was already written down in the files.
 
 ## How to use it
 
-Fill in the six files, then work from them. That's it.
+Four steps.
 
-The first pass takes about an afternoon. You'll need one long conversation with whoever knows the business, the website, a few sales calls if you have them, and an hour looking at competitors.
+**1. Get your own copy.**
+Click "Use this template" at the top of this page and GitHub makes you your own version. Or if that feels like a lot, click into any file, copy the text, and paste it into a Google Doc or Notion page. Both work fine.
 
-**In Claude, Claude Code, or any agent that reads files:** point it at `CLAUDE.md`. It follows from there. Ask for a campaign brief and you get one shaped by your ICP, your voice and your targets, without re-explaining any of it.
+**2. Fill in the six files.**
+Everything in [square brackets] or *italics* is a prompt for you to replace with your own answer. Start with `business-context.md`, because the others refer back to it.
 
-**In Notion or Google Docs:** the structure maps straight across. Rebuild as pages, or paste the files in. Then paste the relevant one into your chat when you need it. Less elegant, works fine.
+This takes about an afternoon. You'll want a long conversation with whoever knows the business best, the website open in another tab, a few sales calls if you have them, and an hour looking at competitors.
 
-**If you're not technical:** every file is plain text. Open it in your browser, click the copy icon, paste it into whatever you use. Nothing to install.
+**3. Let your AI read the files, don't paste them in.**
+The point is that it reads the current version every time. Paste text into a chat and you're working from a copy you chose by hand, which is out of date the moment you change something.
 
-Start with `context/business-context.md`. It's the one everything else references.
+Two ways that work properly:
 
-Expect it to be wrong in places. That's fine. A written-down answer you can correct beats an unwritten one you can't.
+*Keep them as files.* Use a tool that reads the folder directly, like Claude Code. You tell it to read `CLAUDE.md` and it finds the rest on its own. It runs in a terminal, but you type in plain English.
 
-## A note on formats
+*Keep them in Notion.* Rebuild the six files as Notion pages and connect Notion to Claude. It reads the live pages, so when you update one, the next thing you ask is already using it. If your team lives in Notion, this is the better option.
 
-Most teams have humans who live in Notion and agents that live in files. Pick one and you either lose the people or lose the machine. I keep both in sync, which costs a little discipline and solves a lot of drift.
+Either way, update the file or the page and everything after it uses the new version. That's the whole trick.
 
-This is an answer for now, not forever. Agents can already read and write Notion directly, so the case for a second copy is weaker than it was a year ago. The end state is probably one source with several interfaces. Until that's true in practice, two formats beats losing half your readers.
+If you just want to try it once, paste the files into a chat. Fine for a test, not a way to work.
+
+**4. Keep them current.**
+Every file has a change log at the bottom. When your positioning shifts or a competitor does something, update the file and date it. A file nobody updates is worse than no file, because people still trust it.
+
+Your first version won't be right. Write it anyway and fix it later.
 
 ## Credit
 
-The four-layer architecture (context, skills, orchestration, integrations) and the idea of a context spine come from [Matteo Tittarelli's AI GTM system](https://www.growthunhinged.com/p/how-to-build-your-ai-gtm-system). He published it to be copied. This is that structure, extended with the operational layer a marketing lead actually runs and mirrored into a format non-technical teams can use.
+The four-layer architecture (context, skills, orchestration, integrations) and the idea of a context spine come from [Matteo Tittarelli's AI GTM system](https://www.growthunhinged.com/p/how-to-build-your-ai-gtm-system). He published it to be copied. This is his structure, with the parts a marketing lead deals with day to day added, and written so people who don't use code can still use it.
 
 ## Using this
 
