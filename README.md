@@ -1,3 +1,5 @@
+![marketing-os: stop re-explaining your company. The context layer of a marketing operating system.](cover.png)
+
 # marketing-os
 
 A marketing operating system covers a lot of ground: positioning, campaigns, content, budgets, numbers, playbooks, the way a team works.
@@ -12,6 +14,7 @@ A marketing OS has four layers:
 - **Execution**: campaigns, content, assets, customer stories, the work itself.
 - **Measurement**: what you track, and what it's telling you.
 - **Operations**: playbooks, process, how the team actually works.
+
 
 Context comes first, because every other layer reads from it. Get the positioning wrong and every campaign inherits the mistake.
 
@@ -55,21 +58,36 @@ context/
   brand-guidelines.md  → brand core, visual identity, voice and writing rules
   expert-pov.md        → founder beliefs, contrarian takes, the one big idea
   goals.md             → targets and KPIs, as context work can point at
+example/               → all of the above filled in, plus what came out of it
 ```
 
 Six files. That's the foundation. Everything else reads from it.
 
+## See it filled in
+
+**Start here:** [`example/output/campaign-brief.md`](example/output/campaign-brief.md). Same one-sentence prompt, run twice. Once without the context, once with. The difference is the whole argument.
+
+`example/` has the whole thing done for a fictional company: six files filled, plus three artifacts produced from them. A positioning statement, a LinkedIn post in the founder's voice, and a Q3 campaign brief.
+
+Each artifact ends with a table showing where every element came from. The campaign brief rules out paid social and a Spanish launch, targets a named list of 600 club owners, builds around an insight about empty Tuesday afternoons, and flags that the founder is the bottleneck. None of that was in the prompt. The prompt was one sentence.
+
+That's the whole argument, in one folder.
+
 ## How to use it
 
-**If you work in markdown or Claude Code:** clone the repo, fill in the templates, keep them next to your work. Claude reads `CLAUDE.md` first and follows it to whatever else it needs.
+Fill in the six files, then work from them. That's it.
 
-**If you work in Notion:** the structure maps straight across. Rebuild it as pages, or duplicate the files into Notion and work from there. The content is what matters, not the format.
+The first pass takes about an afternoon. You'll need one long conversation with whoever knows the business, the website, a few sales calls if you have them, and an hour looking at competitors.
 
-**If you're not technical:** every file here is plain text. Open it in your browser, read it, copy it. Nothing to install, nothing to run.
+**In Claude, Claude Code, or any agent that reads files:** point it at `CLAUDE.md`. It follows from there. Ask for a campaign brief and you get one shaped by your ICP, your voice and your targets, without re-explaining any of it.
+
+**In Notion or Google Docs:** the structure maps straight across. Rebuild as pages, or paste the files in. Then paste the relevant one into your chat when you need it. Less elegant, works fine.
+
+**If you're not technical:** every file is plain text. Open it in your browser, click the copy icon, paste it into whatever you use. Nothing to install.
 
 Start with `context/business-context.md`. It's the one everything else references.
 
-Expect the first pass to take an afternoon and to be wrong in places. That's fine. A written-down answer you can correct beats an unwritten one you can't.
+Expect it to be wrong in places. That's fine. A written-down answer you can correct beats an unwritten one you can't.
 
 ## A note on formats
 
@@ -80,6 +98,12 @@ This is an answer for now, not forever. Agents can already read and write Notion
 ## Credit
 
 The four-layer architecture (context, skills, orchestration, integrations) and the idea of a context spine come from [Matteo Tittarelli's AI GTM system](https://www.growthunhinged.com/p/how-to-build-your-ai-gtm-system). He published it to be copied. This is that structure, extended with the operational layer a marketing lead actually runs and mirrored into a format non-technical teams can use.
+
+## Using this
+
+No licence yet. Shared as-is. Take what's useful, change what doesn't fit, and credit is appreciated but not required.
+
+If you fill it in for your own company and something in the structure turns out to be wrong, tell me. That's the useful feedback.
 
 ## Who's behind this
 
