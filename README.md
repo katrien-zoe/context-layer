@@ -1,7 +1,7 @@
 ![marketing-os: stop re-explaining your company. The context layer of a marketing operating system.](cover.png)
 
 
-# marketing-os
+# Context layer
 
 A marketing operating system covers a lot of ground: positioning, campaigns, content, budgets, numbers, playbooks, the way a team works.
 
