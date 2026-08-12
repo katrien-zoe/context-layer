@@ -124,3 +124,7 @@ If you fill it in for your own company and something in the structure turns out 
 Katrien Zoë Depoorter. B2B tech marketer. Builder by nature. Brand, demand and operational set-up.
 
 [LinkedIn](https://www.linkedin.com/in/katrienzoedepoorter/) · [Substack](https://katrienzoe.substack.com) · [portor-co.be](https://www.portor-co.be/)
+
+## Related
+
+Part of [marketing-os](https://github.com/katrien-zoe/marketing-os), a set of marketing systems kept as public templates. A companion module, [get-recommended-by-ai](https://github.com/katrien-zoe/get-recommended-by-ai), covers getting your company named when a buyer asks an AI which software to use.
